@@ -20,7 +20,6 @@ const AdvertisemenForm = (route: any) => {
   const [area, setArea] = useState(null);
 
   const onChangeArea = (event: AutoCompleteChangeEvent) => {
-    console.log(event.value);
     setArea(event.value);
     setValue('area', event.value.placeId);
   };
@@ -102,6 +101,12 @@ const AdvertisemenForm = (route: any) => {
                 rules={{ required: 'Title is required.' }}
                 render={({ field, fieldState }) => (
                   <InputText
+                    {...register(field.name, {
+                      maxLength: {
+                        value: 155,
+                        message: "Title's limit is 155 characters"
+                      }
+                    })}
                     id={field.name}
                     {...field}
                     autoFocus
@@ -203,16 +208,9 @@ const AdvertisemenForm = (route: any) => {
             <span className='p-float-label'>
               <Controller
                 name='description'
-                rules={{ required: 'Type is required.' }}
                 control={control}
                 render={({ field, fieldState }) => (
                   <InputTextarea
-                    {...register(field.name, {
-                      maxLength: {
-                        value: 155,
-                        message: 'Description must be 155 characters'
-                      }
-                    })}
                     id={field.name}
                     {...field}
                     className={classNames({
@@ -221,14 +219,8 @@ const AdvertisemenForm = (route: any) => {
                   />
                 )}
               />
-              <label
-                htmlFor='description'
-                className={classNames({ 'p-error': errors.description })}
-              >
-                Extra Description
-              </label>
+              <label htmlFor='description'>Extra Description</label>
             </span>
-            {getFormErrorMessage('description')}
           </div>
 
           <div className='field'>

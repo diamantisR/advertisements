@@ -1,0 +1,108 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Advertisements",
+    "dateExported": "2023-10-30T18:41:29.161Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "80fa8ca3-95a7-4d12-b243-2b9de1bf280c",
+            "colId": "2f49ac0a-bcbc-473b-8d8d-ecdc418f6c2c",
+            "containerId": "",
+            "name": "GET ADVERTISEMENT",
+            "url": "http://localhost:5000/api/advertisements/653d5d39750a5b08523d62a9",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-10-28T10:18:27.322Z",
+            "modified": "2023-10-28T19:32:42.333Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "319eeec9-bd7f-4f55-882f-aa3f1d0044a6",
+            "colId": "2f49ac0a-bcbc-473b-8d8d-ecdc418f6c2c",
+            "containerId": "",
+            "name": "GET ADVERTISEMENTS",
+            "url": "http://localhost:5000/api/advertisements",
+            "method": "GET",
+            "sortNum": 17500,
+            "created": "2023-10-28T10:08:27.681Z",
+            "modified": "2023-10-28T10:09:31.444Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7dab4063-1584-480e-9977-fb1b27410e12",
+            "colId": "2f49ac0a-bcbc-473b-8d8d-ecdc418f6c2c",
+            "containerId": "",
+            "name": "CREATE ADVERTISEMENT",
+            "url": "http://localhost:5000/api/advertisements",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-28T10:08:57.196Z",
+            "modified": "2023-10-30T09:07:15.461Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"12114\",\n  \"type\": \"Donation\",\n  \"area\": \"New York\",\n  \"description\": \"desc\",\n  \"price\": 100,\n  \"file\": \"file\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3b65a572-c392-46b0-9729-a0bd6ad6b309",
+            "colId": "2f49ac0a-bcbc-473b-8d8d-ecdc418f6c2c",
+            "containerId": "",
+            "name": "DELETE ADVERTISEMENT",
+            "url": "http://localhost:5000/api/advertisements/653cde0e99cc9ef1fec902fe",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-10-28T10:10:48.657Z",
+            "modified": "2023-10-28T10:19:29.331Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"John\",\n  \"type\": \"Rent\",\n  \"area\": \"New York\",\n  \"description\": \"desc\",\n  \"price\": 100,\n  \"file\": \"file\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e59d9e75-4e7d-4366-bb8a-60a74355f0cf",
+            "colId": "2f49ac0a-bcbc-473b-8d8d-ecdc418f6c2c",
+            "containerId": "",
+            "name": "DELETE ADVERTISEMENT Copy",
+            "url": "http://localhost:5000/api/advertisements/653d3264c148ebf0ff11701c",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-10-28T10:11:12.986Z",
+            "modified": "2023-10-28T16:34:10.828Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"TEST\",\n  \"type\": \"Rent\",\n  \"area\": \"ATHENS\",\n  \"description\": \"desc\",\n  \"price\": 500,\n  \"file\": \"file\",\n  \"activated\": false\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "43e63b5a-fa8e-4126-af5f-fbad5b494340",
+            "colId": "2f49ac0a-bcbc-473b-8d8d-ecdc418f6c2c",
+            "containerId": "",
+            "name": "GET AREA",
+            "url": "http://localhost:5000/api/locations",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-29T22:50:10.787Z",
+            "modified": "2023-10-30T07:53:32.973Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
